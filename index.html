@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <!--<!
+  [endif]--><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title></title>
+    <meta
+      name="csrf-token"
+      content="93qnLchsj9Vfb2aYYPFCeVF0zvXcpCQz5hIkA202"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link
+      href="./index_files/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./index_files/simple-line-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./index_files/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./index_files/bootstrap-switch.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link
+      href="./index_files/jquery.fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link
+      href="./index_files/components-rounded.min.css"
+      rel="stylesheet"
+      id="style_components"
+      type="text/css"
+    />
+    <link
+      href="./index_files/plugins.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link
+      href="./index_files/layout.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./index_files/default.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="style_color"
+    />
+    <link
+      href="./index_files/custom.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./index_files/layui.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link href="./index_files/project.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background: #2d2d2d;
+      }
+
+      .page-header.navbar,
+      .page-header.navbar {
+        background: #2d2d2d;
+        border-bottom: 2px solid #000;
+        position: fixed;
+        z-index: 1;
+      }
+
+      .page-header.navbar .top-menu .navbar-nav > li.dropdown {
+        height: 54px;
+      }
+
+      .menu-lable {
+        width: 24.95%;
+        float: left;
+        padding-left: 3%;
+      }
+
+      .outside-panel {
+        padding: 0px;
+        background: #2d2d2d;
+        /*border:1px solid #000;*/
+      }
+
+      .padding20 {
+        padding: 20px;
+      }
+
+      .page-sidebar {
+        background: #2d2d2d;
+        color: #c5c5c5;
+        overflow-y: auto;
+        height: auto;
+      }
+
+      .dropdown-menu,
+      .dropdown-toggle:hover {
+        background: #222222 !important;
+      }
+
+      .goods-menu {
+        border-left: 2px solid #000;
+        border-right: 1px solid #000;
+        overflow: auto;
+      }
+
+      .main-body {
+        border-left: 1px solid #000;
+        border-right: 2px solid #000;
+      }
+
+      @media (max-width: 767px) {
+        .page-header.navbar .page-top {
+          border-left: 2px solid #000;
+          border-right: 2px solid #000;
+          border-bottom: 2px solid #000;
+          background: #2d2d2d;
+        }
+
+        #main-page-body {
+          height: auto !important;
+        }
+
+        .main-page-footer-body {
+          height: auto !important;
+        }
+
+        #goodsList {
+          height: 450px;
+          overflow-y: auto;
+        }
+      }
+      .main-page-footer-body-botton {
+        position: absolute;
+        padding-right: 20px;
+        width: 100%;
+      }
+      .page-header.navbar
+        .top-menu
+        .navbar-nav
+        > li.dropdown-user
+        .dropdown-toggle
+        > i {
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      #logo {
+        float: left;
+        width: 70px;
+        margin-top: 15px;
+        margin-right: 5px;
+      }
+      .page-header.navbar .page-logo {
+        padding-left: 20px;
+      }
+    </style>
+    <link
+      id="layuicss-laydate"
+      rel="stylesheet"
+      href="./index_files/laydate.css"
+      media="all"
+    />
+    <link
+      id="layuicss-layer"
+      rel="stylesheet"
+      href="./index_files/layer.css"
+      media="all"
+    />
+    <link
+      id="layuicss-skincodecss"
+      rel="stylesheet"
+      href="./index_files/code.css"
+      media="all"
+    />
+  </head>
+
+  <body class="page-container-bg-solid page-sidebar-closed-hide-logo" style="">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar">
+      <!-- BEGIN HEADER INNER -->
+      <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+          <a href="" class="logo-font"></a>
+        </div>
+
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a
+          href="javascript:;"
+          class="menu-toggler responsive-toggler"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        ></a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+          <button
+            class="btn-add-green-table btn btn-primary"
+            onclick="addTable()"
+          >
+            增加桌號
+          </button>
+          <!-- BEGIN TOP NAVIGATION MENU -->
+          <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+              <li class="separator hide"></li>
+              <!-- BEGIN USER LOGIN DROPDOWN -->
+              <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+              <li class="dropdown dropdown-user dropdown-dark">
+                <a
+                  href="javascript:;"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <!--span class="username"> 15788 </span-->
+                  <span class="username">我的</span>
+                  <i class="fa fa-user-circle-o"></i>
+                  <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                  <!--img alt="" class="img-circle" src="/assets/images/man.svg" /-->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-default">
+                  <li>
+                    <a href=""> <i class="icon-home"></i> 投注中心 </a>
+                  </li>
+
+                  <li class="divider"></li>
+                  <li>
+                    <a href=""> <i class="fa fa-sign-out"></i>登出</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- END USER LOGIN DROPDOWN -->
+            </ul>
+          </div>
+          <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+      </div>
+      <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"></div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div
+      id="main-view"
+      class="page-container"
+      style="background: #2d2d2d; padding: 5px; margin-top: 60px"
+    >
+      <style>
+        input {
+          width: 100px;
+          text-align: center;
+          background-color: #ffffff00;
+          border: 1px solid #9b9b9b;
+          color: #000;
+        }
+        .bottom-line {
+          border: 0;
+          border-bottom: 1px solid #959595;
+        }
+        .table {
+          background-color: #f7f7f7;
+        }
+        .table-head-th > thead:first-child > tr:first-child > th {
+          border-bottom: 0;
+          margin: 0;
+          font-size: 10px;
+          padding: 0px;
+        }
+        .table-body-th.table.table-light > tbody > tr > td {
+          border-top: 0;
+          text-align: center;
+          font-size: 10px;
+        }
+        .table-body-th > thead:first-child > tr:first-child > th {
+          text-align: center;
+          font-size: 10px;
+          padding: 0px;
+        }
+        .table.table-light > tbody > tr > td {
+          border: 1px solid #dfdfdf;
+          color: #626d74;
+          vertical-align: middle;
+          line-height: 1 !important;
+        }
+        .table-condensed > tbody > tr > td {
+          padding: 0px;
+        }
+        .table > thead > tr > th {
+          vertical-align: middle;
+        }
+        .table-number {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        .table-input {
+          width: 20%;
+          display: inline-block;
+        }
+        .margin0 {
+          margin: 0 !important;
+        }
+        .dashboard-stat99 {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          border-radius: 4px;
+          background: #fff;
+          background-color: #2d2d2d;
+          border: 10px solid #fff;
+          margin-bottom: 20px;
+        }
+        .w30px {
+          min-width: 40px !important;
+          border: 0 !important;
+          background-color: #00685f !important;
+          color: #e7e7e7 !important;
+        }
+        .row-number {
+          border: 0 !important;
+          background-color: #fff;
+          color: #fff !important;
+        }
+        .bg-fff {
+          background-color: #fff;
+        }
+        .bg-ffe0de {
+          background-color: #ffe0de;
+          cursor: pointer;
+        }
+        .bg-bee2e7 {
+          background-color: #bee2e7;
+        }
+        .bg-red {
+          background-color: red !important;
+        }
+        .bg-dark-red {
+          background-color: #c50d00;
+          color: #ffc107 !important;
+        }
+        .color-fff {
+          color: #fff !important;
+        }
+        .color-yellow {
+          color: yellow !important;
+        }
+        .highlight-box {
+          background-color: #ffb7a0 !important;
+        }
+        .green-table {
+          border-radius: 4px;
+          border: 1px solid #2d2d2d;
+          padding: 5px;
+          background-color: #fff;
+        }
+        .green-table-right {
+          background-color: #f3f3f3 !important;
+        }
+        .btn-add-green-table {
+          display: inline-block;
+          float: left;
+          margin-top: 15px;
+        }
+        .table-result {
+          height: 36px;
+          padding-top: 8px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .gone {
+          display: none;
+        }
+        .w105 {
+          width: 105px;
+        }
+      </style>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,1)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,1)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,1)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,1)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body1">
+               
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-1" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right1">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,2)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,2)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,2)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,2)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body2">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-2" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right2">
+             
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,3)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,3)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,3)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,3)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body3">
+ 
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-3" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right3">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,4)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,4)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,4)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,4)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body4">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-4" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right4">
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,5)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,5)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,5)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,5)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body5">
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-5" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right5">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,6)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,6)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,6)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,6)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body6">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-6" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right6">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,7)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,7)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,7)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,7)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body7">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-7" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right7">
+              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,8)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,8)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,8)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,8)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body8">
+             
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-8" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right8">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,9)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,9)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,9)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,9)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body9">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select id="table-result-9" onchange="selectTarget(this)">
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right9">
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-both-side5px green-table">
+        <div class="col-md-10" style="padding: 2px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-number">
+                      桌號
+                      <input class="bottom-line" type="text" placeholder="" />
+                    </div>
+                    <div class="table-input">
+                      注碼
+                      <input
+                        class="bottom-line"
+                        oninput="onlyInputNumber(this)"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+                  </th>
+                  <th style="text-align: right">
+                    <button
+                      class="btn"
+                      onclick="clearAll(this,10)"
+                      style="margin-right: 5%"
+                    >
+                      清除
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="O"
+                      onclick="btnBottomPour(this,10)"
+                    >
+                      莊
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="H"
+                      onclick="btnBottomPour(this,10)"
+                    >
+                      和
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-tag="X"
+                      onclick="btnBottomPour(this,10)"
+                    >
+                      閒
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table-body-th table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th id="th0" class="row-number"></th>
+                  <th id="th1" class="w30px">A</th>
+                  <th id="th2" class="w30px">B</th>
+                  <th id="th3" class="w30px">C</th>
+                  <th id="th4" class="w30px">D</th>
+                  <th id="th5" class="w30px">E</th>
+                  <th id="th6" class="w30px">F</th>
+                  <th id="th7" class="w30px">G</th>
+                  <th id="th8" class="w30px">H</th>
+                  <th id="th9" class="w30px">I</th>
+                  <th id="th10" class="w30px">J</th>
+                  <th id="th11" class="w30px">K</th>
+                  <th id="th12" class="w30px">L</th>
+                  <th id="th13" class="w30px">M</th>
+                  <th id="th14" class="w30px">N</th>
+                  <th id="th15" class="w30px">O</th>
+                  <th id="th16" class="w30px">P</th>
+                  <th id="th17" class="w30px">Q</th>
+                  <th id="th18" class="w30px">R</th>
+                  <th id="th19" class="w30px">S</th>
+                  <th id="th20" class="w30px">T</th>
+                </tr>
+              </thead>
+              <tbody id="table-body10">
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0px 2px 0px 0px">
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table class="table table-light table-condensed">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="table-result">
+                      <select
+                        id="table-result-10"
+                        onchange="selectTarget(this)"
+                      >
+                        <option>選擇此桌結果</option>
+                        <option value="1">✓ 贏</option>
+                        <option value="0">✕ 輸</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="table-scrollable table-scrollable-borderless margin0">
+            <table
+              class="green-table-right table-body-th table table-light table-condensed"
+            >
+              <thead>
+                <tr>
+                  <th class="bg-red color-fff">倍數</th>
+                  <th class="bg-red color-fff">注碼</th>
+                </tr>
+              </thead>
+              <tbody id="table-body-right10">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <!--div class="page-footer">
+    <div class="page-footer-inner">© 2019 <a href="" target="_blank"></a> </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+</div-->
+    <!-- END FOOTER -->
+    <!--[if lt IE 9]>
+      <script src="/assets/global/plugins/respond.min.js"></script>
+      <script src="/assets/global/plugins/excanvas.min.js"></script>
+      <script src="/assets/global/plugins/ie8.fix.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script
+      src="./index_files/jquery.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/bootstrap.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/js.cookie.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/jquery.slimscroll.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/jquery.blockui.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/bootstrap-switch.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script src="./index_files/layui.js.下載" type="text/javascript"></script>
+    <script src="./index_files/layer.js.下載" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script
+      src="./index_files/jquery.qrcode.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/jquery-ui.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/echarts.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <!--script src="/js/echarts.min.js" type="text/javascript"></script-->
+    <script
+      src="./index_files/decimal.min.js.下載"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./index_files/dateFormat.js.下載"
+      type="text/javascript"
+    ></script>
+    <script src="./index_files/layer.js.下載" type="text/javascript"></script>
+
+    <script>
+      let col = [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+      ];
+      let isInput = false;
+      let currentTable = 1;
+      let currentGird = "1-A1";
+      let initMaxTable = 10;
+      let tableStartNum = 1;
+      let greenTableBottomPourIndex = [];
+      let girdId = "";
+      let gridX = "";
+      let gridY = "";
+      let pokerChipsTotal = 0;
+      let mx = 0,
+        my = 1;
+
+      /*********/
+      document.onkeydown = keyDown;
+      function keyDown(event) {
+        if (isInput) return;
+        var event = event || window.event; // 标准化事件对象
+        switch (
+          event.keyCode // 获取当前按下键盘键的编码
+        ) {
+          case 37: // 按下左箭头键
+            if (mx > 0) {
+              mx = parseInt(mx) - 1;
+              moveBox(mx, my);
+            }
+            break;
+          case 39: // 按下右箭头键
+            if (mx < 19) {
+              mx = parseInt(mx) + 1;
+              moveBox(mx, my);
+            }
+            break;
+          case 38: // 按下上箭头键
+            if (my > 1) {
+              my = parseInt(my) - 1;
+              moveBox(mx, my);
+            }
+            break;
+          case 40: // 按下下箭头键
+            if (my < 3) {
+              my = parseInt(my) + 1;
+              moveBox(mx, my);
+            }
+            break;
+          case 49:
+            //莊
+            $("#" + currentGird).text("O");
+            rule(currentTable, col[mx], my);
+            break;
+          case 50:
+            //和
+            $("#" + currentGird).text("H");
+            rule(currentTable, col[mx], my);
+            break;
+          case 51:
+            //閒
+            $("#" + currentGird).text("X");
+            rule(currentTable, col[mx], my);
+            break;
+        }
+        return false;
+      }
+      /*********/
+
+      function selectTarget(target) {
+        let jq = $(target);
+        let val = jq.val();
+        let index = jq.attr("id");
+        if (val == 1) {
+          jq.css({ "background-color": "green", color: "#fff" });
+        } else if (val == 0) {
+          jq.css({ "background-color": "gray", color: "#fff" });
+        }
+      }
+      function moveBox(a1, a2) {
+        isInput = false;
+        let bpIndex = greenTableBottomPourIndex[currentTable];
+        let x = col[a1];
+        let y = a2;
+        bpIndex[0] = x;
+        bpIndex[1] = y;
+        let colTag = x + y;
+        let girdId = currentTable + "-" + colTag;
+        currentGird = girdId;
+        $(".bg-ffe0de.highlight-box").removeClass("highlight-box");
+        $("#" + girdId).addClass("highlight-box");
+      }
+      function greenTable(index) {
+        return (
+          '<div class="col-md-6 padding-both-side5px green-table">\
+                      <div class="col-md-10" style="padding:2px;">\
+                        <div class="table-scrollable table-scrollable-borderless margin0">\
+                          <table class="table table-light table-condensed">\
+                              <thead>\
+                                  <tr>\
+                                    <th>\
+                                        <div class="table-number">桌號 <input class="bottom-line" type="text" placeholder=""></div>\
+                                        <div class="table-input">注碼 <input class="bottom-line" oninput="onlyInputNumber(this)" type="text" placeholder=""></div>\
+                                    </th>\
+                                    <th style="text-align: right;">\
+                                        <button class="btn" onclick="clearAll(this,' +
+          index +
+          ')" style="margin-right:5%;">清除</button>\
+                                        <button class="btn btn-primary" data-tag="O" onclick="btnBottomPour(this,' +
+          index +
+          ')">莊</button>\
+                                        <button class="btn btn-primary" data-tag="H" onclick="btnBottomPour(this,' +
+          index +
+          ')">和</button>\
+                                        <button class="btn btn-primary" data-tag="X" onclick="btnBottomPour(this,' +
+          index +
+          ')">閒</button>\
+                                    </th>\
+                                  </tr>\
+                              </thead>\
+                          </table>\
+                        </div>\
+                        <div class="table-scrollable table-scrollable-borderless margin0">\
+                          <table class="table-body-th table table-light table-condensed">\
+                              <thead>\
+                                  <tr>\
+                                    <th id="th0" class="row-number"> </th>\
+                                    <th id="th1" class="w30px">A</th>\
+                                    <th id="th2" class="w30px">B</th>\
+                                    <th id="th3" class="w30px">C</th>\
+                                    <th id="th4" class="w30px">D</th>\
+                                    <th id="th5" class="w30px">E</th>\
+                                    <th id="th6" class="w30px">F</th>\
+                                    <th id="th7" class="w30px">G</th>\
+                                    <th id="th8" class="w30px">H</th>\
+                                    <th id="th9" class="w30px">I</th>\
+                                    <th id="th10" class="w30px">J</th>\
+                                    <th id="th11" class="w30px">K</th>\
+                                    <th id="th12" class="w30px">L</th>\
+                                    <th id="th13" class="w30px">M</th>\
+                                    <th id="th14" class="w30px">N</th>\
+                                    <th id="th15" class="w30px">O</th>\
+                                    <th id="th16" class="w30px">P</th>\
+                                    <th id="th17" class="w30px">Q</th>\
+                                    <th id="th18" class="w30px">R</th>\
+                                    <th id="th19" class="w30px">S</th>\
+                                    <th id="th20" class="w30px">T</th>\
+                                  </tr>\
+                              </thead>\
+                              <tbody id="table-body' +
+          index +
+          '">\
+                              </tbody>\
+                          </table>\
+                        </div>\
+                      </div>\
+					  <div class="col-md-2" style="padding:0px 2px 0px 0px;">\
+						<div class="table-scrollable table-scrollable-borderless margin0">\
+                          <table class="table table-light table-condensed">\
+                              <thead>\
+                                  <tr>\
+                                    <th>\
+                                        <div class="table-result">\
+          									<select id="table-result-' +
+          index +
+          '" onchange="selectTarget(this)">\
+                                          		<option>選擇此桌結果</option>\
+                                          		<option value ="1"> ✓ 贏 </option>\
+                                          		<option value="0"> ✕ 輸 </option>\
+                                        	</select>\
+      									</div>\
+                                    </th>\
+                                  </tr>\
+                              </thead>\
+                          </table>\
+                        </div>\
+                        <div class="table-scrollable table-scrollable-borderless margin0">\
+                          <table class="green-table-right table-body-th table table-light table-condensed">\
+                              <thead>\
+                                  <tr>\
+                                    <th class="bg-red color-fff">倍數</th>\
+                                    <th class="bg-red color-fff">注碼</th>\
+                                  </tr>\
+                              </thead>\
+                              <tbody id="table-body-right' +
+          index +
+          '">\
+                              </tbody>\
+                          </table>\
+                        </div>\
+					  </div>\
+                  </div>'
+        );
+      }
+      function clearAll(target, index) {
+        greenTableBottomPourIndex[index] = ["A", 1];
+        for (let y = 1; y < 20; y++) {
+          let cell;
+          for (let x = 1; x <= 22; x++) {
+            let labelX = $("#th" + x).text();
+            if (y <= 19 && x < 21) {
+              let val = "";
+              let bg = "#fff";
+              let color = "";
+              if (y <= 3) {
+                bg = "#ffe0de";
+              } else if (y > 3 && y < 7) {
+                val = "FALSE";
+              } else if (y > 6 && y < 9 && x > 2) {
+                bg = "#c50d00";
+                color = "#ffc107";
+                val = "FALSE";
+              } else if (y > 8 && y < 11 && x > 2) {
+                val = "1";
+              } else if (y > 10 && y < 13 && x > 5) {
+                bg = "red";
+                color = "yellow";
+                val = "FALSE";
+              } else if (y == 13 && x > 5) {
+                val = "FALSE";
+              } else if (y == 14 && x > 5) {
+                val = "反下";
+              } else if (y == 15 && x > 5) {
+                val = "FALSE";
+              } else if (y == 16 && x > 6) {
+                val = "不打";
+              } else if (y > 17 && y < 20 && x > 6) {
+                bg = "bg-bee2e7";
+                val = "FALSE";
+              } else {
+                bg = "bg-fff color-fff";
+                val = "FFFFF";
+              }
+              let target = $("#" + index + "-" + labelX + y);
+              target.text(val);
+              target.css("background-color", bg);
+              target.css("color", color);
+            }
+          }
+        }
+      }
+      function btnBottomPour(target, index) {
+        isInput = false;
+        let tag = $(target).attr("data-tag");
+        bottomPour(target, index, tag);
+      }
+      function bottomPour(target, index, tag) {
+        let bpIndex = greenTableBottomPourIndex[index];
+        let x = bpIndex[0];
+        let y = bpIndex[1];
+        currentTable = index;
+        mx = azToX(x);
+        my = y;
+        let colTag = x + y;
+        let girdId = index + "-" + colTag;
+
+        $(".bg-ffe0de.highlight-box").removeClass("highlight-box");
+        $("#" + girdId).addClass("highlight-box");
+
+        if (girdId == "") {
+        } else {
+          currentGird = girdId;
+          $("#" + girdId).text(tag);
+          rule(index, x, y);
+        }
+        if (y == 3) {
+          switch (x) {
+            case "A":
+              bpIndex[0] = "B";
+              break;
+            case "B":
+              bpIndex[0] = "C";
+              break;
+            case "C":
+              bpIndex[0] = "D";
+              break;
+            case "D":
+              bpIndex[0] = "E";
+              break;
+            case "E":
+              bpIndex[0] = "F";
+              break;
+            case "F":
+              bpIndex[0] = "G";
+              break;
+            case "G":
+              bpIndex[0] = "H";
+              break;
+            case "H":
+              bpIndex[0] = "I";
+              break;
+            case "I":
+              bpIndex[0] = "J";
+              break;
+            case "J":
+              bpIndex[0] = "K";
+              break;
+            case "K":
+              bpIndex[0] = "L";
+              break;
+            case "L":
+              bpIndex[0] = "M";
+              break;
+            case "M":
+              bpIndex[0] = "N";
+              break;
+            case "N":
+              bpIndex[0] = "O";
+              break;
+            case "O":
+              bpIndex[0] = "P";
+              break;
+            case "P":
+              bpIndex[0] = "Q";
+              break;
+            case "Q":
+              bpIndex[0] = "R";
+              break;
+            case "R":
+              bpIndex[0] = "S";
+              break;
+            case "S":
+              bpIndex[0] = "T";
+              break;
+          }
+          y = 1;
+        } else {
+          y++;
+        }
+        if (colTag == "T3") y = 3;
+        else bpIndex[1] = y;
+      }
+      function azToX(x) {
+        switch (x) {
+          case "A":
+            return 0;
+          case "B":
+            return 1;
+          case "C":
+            return 2;
+          case "D":
+            return 3;
+          case "E":
+            return 4;
+          case "F":
+            return 5;
+          case "G":
+            return 6;
+          case "H":
+            return 7;
+          case "I":
+            return 8;
+          case "J":
+            return 9;
+          case "K":
+            return 10;
+          case "L":
+            return 11;
+          case "M":
+            return 12;
+          case "N":
+            return 13;
+          case "O":
+            return 14;
+          case "P":
+            return 15;
+          case "Q":
+            return 16;
+          case "R":
+            return 17;
+          case "S":
+            return 18;
+          case "T":
+            return 19;
+        }
+      }
+      function touchBottomPourBox(target) {
+        isInput = false;
+        $(".bg-ffe0de.highlight-box").removeClass("highlight-box");
+        $(target).addClass("highlight-box");
+        let girdId = $(target).attr("id");
+        currentGird = girdId;
+        let index = girdId.split("-")[0];
+        currentTable = index;
+        girdX = girdId.substr(2, 1);
+        girdY = girdId.substr(-1);
+        let bpIndex = greenTableBottomPourIndex[index];
+        bpIndex[0] = girdX;
+        bpIndex[1] = girdY;
+        mx = azToX(girdX);
+        my = girdY;
+      }
+      function rule(index, labelX, y) {
+        let label = labelX + y;
+        ruleLogic(index, label);
+        ruleUpdate(index);
+      }
+      function ruleLogic(index, label) {
+        if (label == "A1") {
+          let A1 = $("#" + index + "-A1");
+          let target = $("#" + index + "-A4");
+          let A1Text = A1.text();
+          if (A1Text == "O") target.text("O");
+          else if (A1Text == "X") target.text("X");
+          else target.text("FALSE");
+          if (target != null) colorChange(target);
+        }
+        if (label == "A2") row37Rule(index, "A2", "A4", "A5");
+        if (label == "A3") row37Rule(index, "A3", "A5", "A6");
+
+        let n = label.substr(0, 1);
+        switch (n) {
+          case "B":
+            gridDisplay(index, label, "B", "A");
+            break;
+          case "C":
+            gridDisplay(index, label, "C", "B");
+            break;
+          case "D":
+            gridDisplay(index, label, "D", "C");
+            break;
+          case "E":
+            gridDisplay(index, label, "E", "D");
+            break;
+          case "F":
+            gridDisplay(index, label, "F", "E");
+            break;
+          case "G":
+            gridDisplay(index, label, "G", "F");
+            break;
+          case "H":
+            gridDisplay(index, label, "H", "G");
+            break;
+          case "I":
+            gridDisplay(index, label, "I", "H");
+            break;
+          case "J":
+            gridDisplay(index, label, "J", "I");
+            break;
+          case "K":
+            gridDisplay(index, label, "K", "J");
+            break;
+          case "L":
+            gridDisplay(index, label, "L", "K");
+            break;
+          case "M":
+            gridDisplay(index, label, "M", "L");
+            break;
+          case "N":
+            gridDisplay(index, label, "N", "M");
+            break;
+          case "O":
+            gridDisplay(index, label, "O", "N");
+            break;
+          case "P":
+            gridDisplay(index, label, "P", "O");
+            break;
+          case "Q":
+            gridDisplay(index, label, "Q", "P");
+            break;
+          case "R":
+            gridDisplay(index, label, "R", "Q");
+            break;
+          case "S":
+            gridDisplay(index, label, "S", "R");
+            break;
+          case "T":
+            gridDisplay(index, label, "T", "S");
+            break;
+        }
+      }
+      function ruleUpdate(index) {
+        for (let y = 1; y <= 3; y++) {
+          for (let n = 0; n < 20; n++) {
+            let label = col[n] + y;
+            ruleLogic(index, label);
+          }
+        }
+      }
+      function gridDisplay(index, label, a, b) {
+        if (label == a + "1") row37Rule(index, a + "1", b + "6", a + "4");
+        if (label == a + "2") row37Rule(index, a + "2", a + "4", a + "5");
+        if (label == a + "3") row37Rule(index, a + "3", a + "5", a + "6");
+
+        if (a != "A" && a != "B") {
+          let n7 = $("#" + index + "-" + a + "7");
+          let n4 = $("#" + index + "-" + a + "4");
+          n7.text(n4.text());
+          if (a == "C") {
+            row8Rule(index, "C", "A", "B");
+            row910Rule(index, "C");
+            row78Rule(index, "C");
+          } else if (a == "D") {
+            row8Rule(index, "D", "B", "C");
+            row910Rule(index, "D");
+            row78Rule(index, "D");
+          } else if (a == "E") {
+            row8Rule(index, "E", "C", "D");
+            row910Rule(index, "E");
+            row78Rule(index, "E");
+          } else if (a == "F") {
+            row8Rule(index, "F", "D", "E");
+            row910Rule(index, "F");
+            row11_12Rule(index, "C", "D", "E", "F");
+            row78Rule(index, "F");
+          } else if (a == "G") {
+            row8Rule(index, "G", "E", "F");
+            row910Rule(index, "G");
+            row11_12Rule(index, "D", "E", "F", "G");
+            row78Rule(index, "G");
+          } else if (a == "H") {
+            row8Rule(index, "H", "F", "G");
+            row910Rule(index, "H");
+            let n = row11_12Rule(index, "E", "F", "G", "H");
+            row15Rule(index, n, "H");
+            row16Rule(index, "G", "H");
+            row78Rule(index, "H");
+          } else if (a == "I") {
+            row8Rule(index, "I", "G", "H");
+            row910Rule(index, "I");
+            let n = row11_12Rule(index, "F", "G", "H", "I");
+            row15Rule(index, n, "I");
+            row16Rule(index, "H", "I");
+            row78Rule(index, "I");
+          } else if (a == "J") {
+            row8Rule(index, "J", "H", "I");
+            row910Rule(index, "J");
+            let n = row11_12Rule(index, "G", "H", "I", "J");
+            row15Rule(index, n, "J");
+            row16Rule(index, "I", "J");
+            row78Rule(index, "J");
+          } else if (a == "K") {
+            row8Rule(index, "K", "I", "J");
+            row910Rule(index, "K");
+            let n = row11_12Rule(index, "H", "I", "J", "K");
+            row15Rule(index, n, "K");
+            row16Rule(index, "J", "K");
+            row78Rule(index, "K");
+          } else if (a == "L") {
+            row8Rule(index, "L", "J", "K");
+            row910Rule(index, "L");
+            let n = row11_12Rule(index, "I", "J", "K", "L");
+            row15Rule(index, n, "L");
+            row16Rule(index, "K", "L");
+            row78Rule(index, "L");
+          } else if (a == "M") {
+            row8Rule(index, "M", "K", "L");
+            row910Rule(index, "M");
+            let n = row11_12Rule(index, "J", "K", "L", "M");
+            row15Rule(index, n, "M");
+            row16Rule(index, "L", "M");
+            row78Rule(index, "M");
+          } else if (a == "N") {
+            row8Rule(index, "N", "L", "M");
+            row910Rule(index, "N");
+            let n = row11_12Rule(index, "K", "L", "M", "N");
+            row15Rule(index, n, "N");
+            row16Rule(index, "M", "N");
+            row78Rule(index, "N");
+          } else if (a == "O") {
+            row8Rule(index, "O", "M", "N");
+            row910Rule(index, "O");
+            let n = row11_12Rule(index, "L", "M", "N", "O");
+            row15Rule(index, n, "O");
+            row16Rule(index, "N", "O");
+            row78Rule(index, "O");
+          } else if (a == "P") {
+            row8Rule(index, "P", "N", "O");
+            row910Rule(index, "P");
+            let n = row11_12Rule(index, "M", "N", "O", "P");
+            row15Rule(index, n, "P");
+            row16Rule(index, "O", "P");
+            row78Rule(index, "P");
+          } else if (a == "Q") {
+            row8Rule(index, "Q", "O", "P");
+            row910Rule(index, "Q");
+            let n = row11_12Rule(index, "N", "O", "P", "Q");
+            row15Rule(index, n, "Q");
+            row16Rule(index, "P", "Q");
+            row78Rule(index, "Q");
+          } else if (a == "R") {
+            row8Rule(index, "R", "P", "Q");
+            row910Rule(index, "R");
+            let n = row11_12Rule(index, "O", "P", "Q", "R");
+            row15Rule(index, n, "R");
+            row16Rule(index, "Q", "R");
+            row78Rule(index, "R");
+          } else if (a == "S") {
+            row8Rule(index, "S", "Q", "R");
+            row910Rule(index, "S");
+            let n = row11_12Rule(index, "P", "Q", "R", "S");
+            row15Rule(index, n, "S");
+            row16Rule(index, "R", "S");
+            row78Rule(index, "S");
+          } else if (a == "T") {
+            row8Rule(index, "T", "R", "S");
+            row910Rule(index, "T");
+            let n = row11_12Rule(index, "Q", "R", "S", "T");
+            row15Rule(index, n, "T");
+            row16Rule(index, "S", "T");
+            row78Rule(index, "T");
+          }
+        }
+      }
+      function row37Rule(index, a1, a2, a3) {
+        let gird1 = $("#" + index + "-" + a1);
+        let gird2 = $("#" + index + "-" + a2);
+        let target = $("#" + index + "-" + a3);
+
+        let gird1Text = gird1.text();
+        let gird2Text = gird2.text();
+        if (gird1Text == "H" && gird2Text == "O") target.text("X");
+        else if (gird1Text == "H" && gird2Text == "X") target.text("O");
+        else if (gird1Text == "O") target.text("O");
+        else if (gird1Text == "X") target.text("X");
+        else target.text("FALSE");
+        if (target != null) colorChange(target);
+      }
+      function row78Rule(index, col) {
+        let r5 = $("#" + index + "-" + col + "5");
+        let r7 = $("#" + index + "-" + col + "7");
+        let r6 = $("#" + index + "-" + col + "6");
+        let r8 = $("#" + index + "-" + col + "8");
+        if (r7.text() == r5.text()) {
+          r7.css({
+            "background-color": "#c50d00!important",
+            color: "#ffc107!important",
+          });
+        } else {
+          r7.removeClass("bg-dark-red");
+          r7.css({
+            "background-color": "#fff!important",
+            color: "#000!important",
+          });
+        }
+        if (r8.text() == r6.text()) {
+          r8.css({
+            "background-color": "#c50d00!important",
+            color: "#ffc107!important",
+          });
+        } else {
+          r8.removeClass("bg-dark-red");
+          r8.css({
+            "background-color": "#fff!important",
+            color: "#000!important",
+          });
+        }
+      }
+      function row8Rule(index, a1, a2, a3) {
+        let a = $("#" + index + "-" + a1 + "4").text();
+        let b = $("#" + index + "-" + a2 + "5").text();
+        let c = $("#" + index + "-" + a3 + "6").text();
+        let n = a + b + c;
+
+        if (n == "OXO") $("#" + index + "-" + a1 + "8").text("X");
+        else if (n == "OOX") $("#" + index + "-" + a1 + "8").text("X");
+        else if (n == "XOX") $("#" + index + "-" + a1 + "8").text("O");
+        else if (n == "XXO") $("#" + index + "-" + a1 + "8").text("O");
+        else
+          $("#" + index + "-" + a1 + "8").text(
+            $("#" + index + "-" + a1 + "4").text()
+          );
+      }
+      function row910Rule(index, label) {
+        let n5 = $("#" + index + "-" + label + "5").text();
+        let n7 = $("#" + index + "-" + label + "7").text();
+        let n9 = $("#" + index + "-" + label + "9");
+        if (n5 == n7) n9.text(1);
+        else n9.text(0);
+
+        let n6 = $("#" + index + "-" + label + "6").text();
+        let n8 = $("#" + index + "-" + label + "8").text();
+        let n10 = $("#" + index + "-" + label + "10");
+        if (n6 == n8) n10.text(1);
+        else n10.text(0);
+      }
+      function row11_12Rule(index, a1, a2, a3, a4) {
+        let n1 = parseInt($("#" + index + "-" + a1 + "9").text());
+        let n2 = parseInt($("#" + index + "-" + a1 + "10").text());
+        let n3 = parseInt($("#" + index + "-" + a2 + "9").text());
+        let n4 = parseInt($("#" + index + "-" + a2 + "10").text());
+        let n5 = parseInt($("#" + index + "-" + a3 + "9").text());
+        let n6 = parseInt($("#" + index + "-" + a3 + "10").text());
+        let n = n1 + n2 + n3 + n4 + n5 + n6;
+
+        let target7 = $("#" + index + "-" + a4 + "7");
+        let target11 = $("#" + index + "-" + a4 + "11");
+        row11_12RuleRule(n, target7, target11);
+        let target8 = $("#" + index + "-" + a4 + "8");
+        let target12 = $("#" + index + "-" + a4 + "12");
+        row11_12RuleRule(n, target8, target12);
+
+        signal(index, n, a4);
+
+        let t14 = $("#" + index + "-" + a4 + "14");
+        if (n > 3) t14.text("反下");
+        else if (n < 3) t14.text("正下");
+        else t14.text("FALSE");
+
+        let t15 = $("#" + index + "-" + a4 + "15");
+        if (n == 3) t15.text("TRUE");
+        else t15.text("FALSE");
+
+        return n;
+      }
+      function row11_12RuleRule(n, a, b) {
+        if (n > 3) {
+          b.text(a.text());
+        } else if (n == 3) {
+          b.text("休息");
+        } else if (n < 3) {
+          let z = a.text();
+          if (z == "O") b.text("X");
+          else if (z == "X") b.text("O");
+          else b.text("FALSE");
+        } else {
+          b.text("FALSE");
+        }
+      }
+      function row15Rule(index, n, a) {
+        let r15 = $("#" + index + "-" + a + "15");
+        if (n == 3) r15.text("TRUE");
+        else r15.text("FALSE");
+      }
+      function row16Rule(index, a, b) {
+        let outTarget = $("#" + index + "-" + a + "13");
+        let inTarget = $("#" + index + "-" + b + "16");
+        if (outTarget.text() == "TRUE") inTarget.text("打");
+        else inTarget.text("不打");
+      }
+      function signal(index, n, a) {
+        let t5 = $("#" + index + "-" + a + "5").text();
+        let t6 = $("#" + index + "-" + a + "6").text();
+        let t11 = $("#" + index + "-" + a + "11").text();
+        let t12 = $("#" + index + "-" + a + "12").text();
+        let t13 = $("#" + index + "-" + a + "13");
+        if (t5 != t11 && t6 != t12 && n != 3) {
+          t13.text("訊號");
+          t13.css({ "background-color": "red", color: "black" });
+        } else {
+          t13.text("FALSE");
+          t13.css({ "background-color": "", color: "" });
+        }
+      }
+      function colorChange(target) {
+        let tag = target.text();
+        if (tag == "O") {
+          target.css("background-color", "#ff7970");
+        } else if (tag == "H") {
+          target.css("background-color", "#fff");
+        } else if (tag == "X") {
+          target.css("background-color", "#aec8cb");
+        } else {
+          target.css("background-color", "#fff");
+        }
+      }
+      function tableRow(index) {
+        // x > A-T
+        // y > 1-19
+        // y > 1-3 , x > 1-20 投注輸入
+
+        for (let y = 1; y < 20; y++) {
+          let cell;
+          for (let x = 1; x < 21; x++) {
+            let labelX = $("#th" + x).text();
+            if (y <= 19 && x < 21) {
+              let val = "";
+              let bg = "bg-fff";
+              let onclick = "";
+              if (y <= 3) {
+                onclick = 'onclick="touchBottomPourBox(this)"';
+                bg = "bg-ffe0de";
+              } else if (y > 3 && y < 7) {
+                val = "FALSE";
+              } else if (y > 6 && y < 9 && x > 2) {
+                bg = "bg-dark-red";
+                val = "FALSE";
+              } else if (y > 8 && y < 11 && x > 2) {
+                val = "1";
+              } else if (y > 10 && y < 13 && x > 5) {
+                bg = "bg-red color-yellow";
+                val = "FALSE";
+              } else if (y == 13 && x > 5) {
+                val = "FALSE";
+              } else if (y == 14 && x > 5) {
+                val = "反下";
+              } else if (y == 15 && x > 5) {
+                val = "FALSE";
+              } else if (y == 16 && x > 6) {
+                val = "不打";
+              } else if (y > 17 && y < 20 && x > 6) {
+                bg = "bg-bee2e7";
+                val = "FALSE";
+              } else {
+                bg = "bg-fff color-fff";
+                val = "FFFFF";
+              }
+              cell +=
+                "<td id=" +
+                index +
+                "-" +
+                labelX +
+                y +
+                ' class="' +
+                bg +
+                '" ' +
+                onclick +
+                ">" +
+                val +
+                "</td>";
+            }
+          }
+          let gone = "";
+          if (
+            y == 4 ||
+            y == 5 ||
+            y == 6 ||
+            y == 9 ||
+            y == 10 ||
+            y == 11 ||
+            y == 12 ||
+            y >= 15
+          )
+            gone = "gone";
+          $("#table-body" + index).append(
+            '<tr class="' +
+              gone +
+              '"><td class="row-number">' +
+              y +
+              "</td>" +
+              cell +
+              "</tr>"
+          );
+        }
+        for (let y = 1; y <= 9; y++) {
+          let cell;
+          for (let x = 21; x <= 23; x++) {
+            let labelX = $("#th" + x).text();
+            if (x == 21 && y <= 9) {
+              cell +=
+                "<td id=" +
+                index +
+                "-" +
+                y +
+                "-" +
+                x +
+                ">" +
+                pokerChips[y - 1] +
+                "</td>";
+            } else if (x == 22) {
+              if (y < 9) {
+                cell += "<td id=" + index + "-" + y + "-" + x + ">0</td>";
+              } else if (y == 9) {
+                cell +=
+                  '<td><input oninput="tdTotalInput(this,' +
+                  index +
+                  ')" type="text" placeholder="0" style="width:100px;text-align:center;"></td>';
+              }
+            }
+          }
+          $("#table-body-right" + index).append("<tr>" + cell + "</tr>");
+        }
+      }
+      function addTable() {
+        $("#main-view").append(greenTable(tableStartNum));
+        tableRow(tableStartNum);
+        let startY = 1;
+        let startX = "A";
+        greenTableBottomPourIndex[tableStartNum] = [startX, startY];
+        tableStartNum++;
+        $("input").focus(function () {
+          isInput = true;
+        });
+      }
+      function tdTotalInput(target, index) {
+        onlyInputNumber(target);
+        if (target.value.length > 0) {
+          for (let y = 1; y <= 10; y++) {
+            let x21_val = $("#" + index + "-" + y + "-21").text();
+            let b = (parseInt(target.value) / pokerChipsTotal) * x21_val;
+            $("#" + index + "-" + y + "-22").text(Math.floor(b));
+          }
+        } else {
+          for (let y = 1; y <= 10; y++) {
+            let x21_val = $("#" + index + "-" + y + "-21").text();
+            let b = (parseInt(target.value) / pokerChipsTotal) * x21_val;
+            $("#" + index + "-" + y + "-22").text(0);
+          }
+        }
+      }
+      function onlyInputNumber(target) {
+        let value = target.value;
+        if (value.length == 1) {
+          value = value.replace(/[^1-9]/g, "");
+        } else {
+          value = value.replace(/\D/g, "");
+        }
+        target.value = value;
+      }
+
+      //init
+      let pokerChips = [1, 3, 7, 15, 31, 63, 127, 255, "總額"];
+      for (let n = 0; n < 8; n++) {
+        pokerChipsTotal += pokerChips[n];
+      }
+      for (let n = 0; n < initMaxTable; n++) {
+        addTable();
+      }
+      $(".bg-ffe0de.highlight-box").removeClass("highlight-box");
+      $("#1-A1").addClass("highlight-box");
+    </script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="./index_files/app.min.js.下載" type="text/javascript"></script>
+    <!-- END THEME GLOBAL SCRIPTS -->
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script
+      src="./index_files/layout.min.js.下載"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

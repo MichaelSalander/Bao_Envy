@@ -1,0 +1,111 @@
+.logo-font:hover {text-decoration: underline;color: #fff;}
+.logo-font:link {text-decoration: none; }
+.logo-font:visited {text-decoration: none; }
+.logo-font:active {text-decoration: none;}
+.logo-font {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size:26px;
+    font-weight: bold;
+    color: #fff;
+}
+.logo .logo-font{
+    font-size: 52px;
+}
+
+.page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo .logo-font {
+    display: none; }
+.page-header.navbar{
+    min-height: 60px;
+    height: 60px;
+
+}
+.page-header.navbar .page-logo{
+    height: 60px;
+}
+.menu-toggler .responsive-toggler{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.page-header.navbar .menu-toggler.responsive-toggler{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.page-header.navbar .menu-toggler.sidebar-toggler{
+    margin-top:24px;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown{
+    height: 60px;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown-user .dropdown-toggle{
+    padding:18px 10px 10px;
+}
+html,body{
+    height: 100%;
+}
+.login{
+    /*background: linear-gradient(45deg, #19171f 1%, #2b2835 64%, #25222d 97%) repeat-x;*/
+  	background: linear-gradient(45deg, #000 1%, #000 64%, #000 97%) repeat-x;
+}
+.login .logo{
+    margin:0 auto;
+    text-align: center;
+    padding-top: 115px;
+}
+@media (max-width: 480px){
+    .login .logo{
+        padding-top: 20px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 1400px){
+    .login .logo{
+        padding-top: 100px;
+        margin-top: 0;
+    }
+}
+.login .content .form-control{
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    height: 43px;
+    color: #555;
+}
+.login .content .form-control::placeholder {
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
+.login .content .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+.login .content .form-control:-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc;
+}
+
+element.style {
+}
+.login .content .create-account p a {
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+}
+.login .content .create-account a {
+    display: inline-block;
+    margin-top: 5px;
+}
+.btn:not(.btn-sm):not(.btn-lg) {
+    line-height: 1.44;
+}
+.login .btn {
+    border: 1px solid #337ab7;
+}
+.login .btn, .login .btn-default {
+    font-weight: 600;
+    padding: 10px 25px!important;
+    background-color: #337ab7;
+    color: #8fc4e5;
+}
